@@ -16,6 +16,9 @@
     </style>
   </head>
   <body>
+
+    <script src="https://unpkg.com/babel-standalone"></script>
+
     <main>
       <label for="">Name:<input id="name" type="text"/></label>
       <button id="submit_info">Click Me!</button>
@@ -25,9 +28,7 @@
       </div>
     </main>
 
-    <script src="https://unpkg.com/babel-standalone">
 
-    </script>
 
     <script type="text/babel"  data-presets="latest">
 
@@ -45,7 +46,6 @@
           else{
             document.getElementById('content').textContent = getMessage(name);
           }
-
       });
     </script>
   </body>
